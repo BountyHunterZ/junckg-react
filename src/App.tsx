@@ -11,6 +11,7 @@ const App: React.FC = () => {
         <Route component={Index} path="/index.html" exact />
         <Route component={Index} path="/index.htm" exact />
         <Route component={Tianyuan} path="/tianyuan" exact />
+        <Route component={Tianyuan} path="/tianyuan" />
         <Route component={Wanfeng} path="/wanfeng" exact />
         </Switch>
     </Router>
