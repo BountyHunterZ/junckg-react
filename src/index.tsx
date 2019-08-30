@@ -10,7 +10,7 @@ import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-bulmaCarousel.attach('#carousel-demo', {
+bulmaCarousel.attach('#main-carousel', {
     autoplay: true,
     slidesToScroll: 1,
     slidesToShow: 1,

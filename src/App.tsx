@@ -1,9 +1,131 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, RouteComponentProps, match, Link, Switch } from "react-router-dom";
 import './App.css';
 
 const App: React.FC = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route component={Index} path="/" exact />
+        <Route component={Index} path="/index" exact />
+        <Route component={Index} path="/index.html" exact />
+        <Route component={Index} path="/index.htm" exact />
+        <Route component={Tianyuan} path="/tianyuan" exact />
+        </Switch>
+    </Router>
+  );
+}
+
+function clearIndexStyle() {
+  const hero = document.getElementById("hero");
+  hero!.className = "hero is-primary"
+  document.getElementById("main-carousel")!.style.display = "none"
+  document.getElementById("mainTitle")!.innerHTML = "天元管道"
+  document.getElementById("mainSubitle")!.innerHTML = "重庆盟世欣商贸有限公司"
+}
+
+const Tianyuan: React.FC = () => {
+
+  clearIndexStyle()
+  
+  return (
+    <div style={{padding: "16px", backgroundColor: "#f8f8f8"}}>
+      <div className="tile is-ancestor">
+        <div className="tile is-parent is-2">
+          <article className="tile is-child notification" style={{backgroundColor: "#e8e8e8"}}>
+            <p className="title">市政管道</p>
+          </article>
+        </div>
+        <div className="tile is-parent is-10 is-vertical">
+          <a href="/tianyuan/pvco">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvco.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pvcu">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvcu.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pe">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pe.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pvcc">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvcc.jpg" />
+            </article>
+          </a>
+        </div>
+      </div>
+      <div className="tile is-ancestor">
+        <div className="tile is-parent is-2">
+          <article className="tile is-child notification" style={{backgroundColor: "#e8e8e8"}}>
+            <p className="title">民建管道</p>
+          </article>
+        </div>
+
+        <div className="tile is-parent is-10 is-vertical">
+          <a href="/tianyuan/pvcus">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvcus.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/ppr">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/ppr.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pvcudl">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvcudl.jpg" />
+            </article>
+          </a>
+        </div>
+      </div>
+
+      <div className="tile is-ancestor">
+        <div className="tile is-parent is-2">
+          <article className="tile is-child notification" style={{backgroundColor: "#e8e8e8"}}>
+            <p className="title">家装管道</p>
+          </article>
+        </div>
+        <div className="tile is-parent is-10 is-vertical">
+          <a href="/tianyuan/pvcud">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pvcud.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pprj">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pprj.jpg" />
+            </article>
+          </a>
+
+          <a href="/tianyuan/pert">
+            <article className="tile is-child notification" style={{backgroundColor: "#f8f8f8"}}>
+              <img src="/ty/pert.jpg" />
+            </article>
+          </a>
+        </div>
+        </div>
+    </div>
+  )
+}
+
+const Index: React.FC = () => {
   const hero = document.getElementById("hero");
   hero!.className = "hero is-primary is-medium has-carousel"
+  document.getElementById("main-carousel")!.style.display = "block"
+  document.getElementById("mainTitle")!.innerHTML = "盟世欣商贸"
+  document.getElementById("mainSubitle")!.innerHTML = "天元管道、万丰塑胶重庆经销商"
   return (
     <div style={{padding: "16px"}}>
       <div className="tile is-ancestor">
@@ -20,12 +142,20 @@ const App: React.FC = () => {
         </div>
 
         <div className="tile is-parent is-vertical is-4">
+          
           <article className="tile is-child notification is-info" style={{backgroundImage:"url(tycover.jpg)"}}>
-            <p className="title">天元管道产品</p>
+            <a href="/tianyuan" style={{textDecoration: "none"}}> 
+              <div style={{height:"100%", width:"100%"}}>
+                <p className="title">天元管道产品</p>
+              </div>
+            </a>
           </article>
-          <article className="tile is-child notification is-info">
-            <p className="title">万丰塑胶产品</p>
-          </article>
+          
+          <a href="/wanfeng">
+            <article className="tile is-child notification is-info">
+              <p className="title">万丰塑胶产品</p>
+            </article>
+          </a>
         </div>
 
         <div className="tile is-parent is-4">
