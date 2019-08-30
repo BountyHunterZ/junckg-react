@@ -169,6 +169,17 @@
       hm.src = "https://hm.baidu.com/hm.js?622234b631f86f349aa6929c8e6ecc28";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
+      setTimeout(() => {
+        document.getElementById("nb_icon_wrap").style.display = "none"
+        document.getElementById("nb_nodeboard_set").style.display = "none"
+        document.getElementById("nb_nodeboard_send").style.display = "none" 
+        document.getElementById("nb_node_contain").style.display = "none"
+        document.getElementById("nb_nodeboard_close").className = "nb-nodeboard-close nb-nodeboard-max" 
+      }, 2000)
+
+      setInterval(() => {
+        document.getElementById("nb_invite_wrap").style.display = "none"
+      },1000)
     })();
     </script>
 </html>
