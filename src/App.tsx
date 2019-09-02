@@ -215,7 +215,7 @@ const Wanfeng: React.FC = () => {
 const Tianyuan: React.FC = () => {
 
   clearIndexStyle()
-  document.getElementById("mainTitle")!.innerHTML = "天元管道"
+  document.getElementById("mainTitle")!.innerHTML = "天原管道"
 
   
   return (
@@ -315,7 +315,7 @@ const Index: React.FC = () => {
   hero!.className = "hero is-primary is-medium has-carousel"
   document.getElementById("main-carousel")!.style.display = "block"
   document.getElementById("mainTitle")!.innerHTML = "盟世欣商贸"
-  document.getElementById("mainSubitle")!.innerHTML = "天元管道、万丰塑胶重庆经销商"
+  document.getElementById("mainSubitle")!.innerHTML = "天原管道、万丰塑胶重庆经销商"
   return (
     <div style={{padding: "16px"}}>
       <div className="tile is-ancestor">
@@ -336,7 +336,7 @@ const Index: React.FC = () => {
           <article className="tile is-child notification is-info" style={{backgroundImage:"url(tycover.jpg)"}}>
             <a href="/tianyuan" style={{textDecoration: "none"}}> 
               <div style={{height:"100%", width:"100%"}}>
-                <p className="title">天元管道产品</p>
+                <p className="title">天原管道产品</p>
               </div>
             </a>
           </article>
