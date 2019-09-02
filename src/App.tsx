@@ -11,7 +11,7 @@ const App: React.FC = () => {
         <Route component={Index} path="/index.html" exact />
         <Route component={Index} path="/index.htm" exact />
         <Route component={Tianyuan} path="/tianyuan" exact />
-        <Route component={Tianyuan} path="/tianyuan" />
+        <Route component={TianyuanDetail} path="/tianyuan/:product" />
         <Route component={Wanfeng} path="/wanfeng" exact />
         </Switch>
     </Router>
@@ -216,7 +216,6 @@ const Tianyuan: React.FC = () => {
 
   clearIndexStyle()
   document.getElementById("mainTitle")!.innerHTML = "天原管道"
-
   
   return (
     <div style={{padding: "16px", backgroundColor: "#f8f8f8"}}>
@@ -308,6 +307,27 @@ const Tianyuan: React.FC = () => {
         </div>
     </div>
   )
+}
+
+interface MatchParams {
+  product: string;
+}
+
+interface PageProps {
+  required: string;
+  match?: match<MatchParams>;
+}
+
+class TianyuanDetail extends React.Component<PageProps, any> {
+  public render() {
+    clearIndexStyle()
+    document.getElementById("mainTitle")!.innerHTML = "天原管道"
+    return(
+      <div style={{padding: "0"}}>
+        <img src={"/tydetail/"+this.props.match!.params.product+".png"} />
+      </div>
+    )
+  }
 }
 
 const Index: React.FC = () => {
