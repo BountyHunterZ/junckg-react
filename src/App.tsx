@@ -32,7 +32,7 @@ const Wanfeng: React.FC = () => {
     <div style={{padding: "16px"}}>
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvc.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvc.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -50,7 +50,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/hdpe.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/hdpe.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -68,7 +68,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/upvc.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/upvc.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -86,7 +86,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvcu.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvcu.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -103,7 +103,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/jcj.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/jcj.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -121,7 +121,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/perq.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/perq.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -138,7 +138,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/pejs.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/pejs.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -156,7 +156,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/xcg.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/xcg.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -174,7 +174,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/xylxg.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/xylxg.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
@@ -192,7 +192,7 @@ const Wanfeng: React.FC = () => {
 
       <div className="tile is-ancestor">
         <div className="tile is-parent is-2">
-          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvcdl.jpg)", backgroundSize: "cover"}}></div>
+          <div className="tile is-child" style={{backgroundImage: "url(/wf/pvcdl.jpg)", backgroundColor:"#2d9325", backgroundSize: "contain", backgroundRepeat:"no-repeat", backgroundPosition: "center"}}></div>
         </div>
         <div className="tile is-parent is-3">
           <article className="tile is-child notification">
